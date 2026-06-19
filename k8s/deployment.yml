@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: flask
-          image: yosrabenali/devops-platform-complete:latest
+          image: yosrabenali/devops-platform-complete:90882ea586cc113f40eb20428f0ca39856911220
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
