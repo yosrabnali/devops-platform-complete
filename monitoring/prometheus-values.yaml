@@ -1,0 +1,7 @@
+prometheus:
+  prometheusSpec:
+    additionalScrapeConfigs:
+      - job_name: 'flask-app'
+        static_configs:
+          - targets: ['flask-service.default.svc.cluster.local:80']
+        metrics_path: /metrics
